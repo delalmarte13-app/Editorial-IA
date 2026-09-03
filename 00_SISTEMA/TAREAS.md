@@ -29,9 +29,9 @@ OPEN / IN PROGRESS / DONE / BLOCKED
 | TASK-010 | P0 | Reestructurar manuscrito | DONE | ESCALeta_v1.md |
 | TASK-011 | P0 | Reescritura editorial v1 | DONE | MANUSCRITO_v1.md |
 | TASK-012 | P0 | QA literario y coherencia | DONE | QA_LITERARIO_v1.md |
-| TASK-013 | P1 | Target, extensión y paginación | IN PROGRESS | pendiente de especificación editorial |
-| TASK-014 | P1 | World Bible + Visual Bible | OPEN | — |
-| TASK-015 | P1 | Storyboard / Scene Sheets | OPEN | — |
+| TASK-013 | P1 | Target, extensión y paginación | DONE | ESPECIFICACION_EDITORIAL_v1.md |
+| TASK-014 | P1 | World Bible + Visual Bible | DONE | WORLD_BIBLE_v1.md + VISUAL_BIBLE_v1.md |
+| TASK-015 | P1 | Storyboard / Scene Sheets | IN PROGRESS | STORYBOARD_v1.md |
 | TASK-016 | P1 | Dirección de arte + prompts | OPEN | — |
 | TASK-017 | P1 | Producción de ilustraciones | OPEN | — |
 | TASK-018 | P1 | Maquetación + KDP | OPEN | — |
