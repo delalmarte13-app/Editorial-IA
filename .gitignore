@@ -1,0 +1,5 @@
+# Editorial IA — archivos que NUNCA deben committearse
+.env
+02_APP/.env
+__pycache__/
+*.pyc
