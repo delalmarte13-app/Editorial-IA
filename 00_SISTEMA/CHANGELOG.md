@@ -11,3 +11,9 @@
 - Arquitectura base del sistema iniciada.
 - CANON, decisiones, problemas y tareas creados.
 - Se establece control documental para reducir repeticiones y mantener coherencia.
+
+## [0.3.0] — 2026-09-09
+- Nueva aplicación móvil Expo en `02_APP/mobile/` con panel de inicio, chat del equipo, herramientas editoriales, dirección de estilo, economía por escenarios y vista del proyecto LEO-PÉREZ.
+- Integración server-side con tRPC/LLM gestionado; fallback local sin claves en el cliente.
+- La app respeta AD-08: no genera ilustraciones y mantiene TASK-017 bloqueada por confirmación autoral.
+- Validación: TypeScript sin errores, 3 pruebas editoriales activas y revisión visual en viewport móvil.

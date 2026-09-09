@@ -43,3 +43,12 @@ Cuando el usuario diga "continúa", "adelante", "sigue" o equivalente, el Direct
 
 ## NOTA DE PIPELINE
 PRÓXIMA EN CADENA: TASK-017 (producción de ilustraciones). Los 20 prompts están listos en PROMPTS_ILUSTRACION_v1.md. Por coste de generación de imágenes con IA, la tarea arranca solo con confirmación expresa del autor (decisión AD-08, DECISIONES.md). Antes de U01 debe generarse y aprobarse el retrato-canon de cada personaje y la vista de Dientespuck.
+
+
+## EXTENSIÓN DE PRODUCTO — APP MÓVIL
+
+| ID | Prioridad | Tarea | Estado | Resultado |
+|---|---|---|---|---|
+| TASK-021 | P1 | Aplicación móvil Editorial IA — MVP operativo | DONE | `02_APP/mobile/README.md` + código Expo |
+
+TASK-021 no modifica la cadena creativa de LEO-PÉREZ: TASK-017 continúa OPEN y requiere la confirmación expresa del autor definida en AD-08.

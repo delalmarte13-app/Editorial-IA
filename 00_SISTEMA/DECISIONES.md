@@ -77,3 +77,11 @@ Las decisiones marcadas como recomendación editorial pueden convertirse en CANO
 - AD-06 QA visual obligatorio de 10 puntos en cada imagen (DIRECCION_ARTE_v1.md §7).
 - AD-07 Prueba previa obligatoria: retratos-canon de LEO, PÉREZ, DINTRIDESKA y vista de DIENTESPUCK antes de U01.
 - AD-08 TASK-017 arranca solo con confirmación expresa del autor por el coste de generación de imágenes con IA; sin confirmación la cadena se detiene tras TASK-016.
+
+
+## DEC-009 — Aplicación móvil y proveedor LLM
+- Fecha: 2026-09-09
+- Decisión: El MVP móvil de Editorial IA se implementa con Expo/React Native y rutas tRPC server-side. El cliente no recibe ni almacena claves de Gemini u otros proveedores; el servidor gestiona el LLM y devuelve respuestas o un fallback local legible.
+- Motivo: proteger secretos, permitir uso offline parcial y mantener el protocolo de ahorro de tokens mediante referencias compactas a documentos canónicos.
+- Alcance: análisis, sugerencias, reescritura, investigación, estrategia comercial, dirección de estilo, economía por escenarios y chat. La app no genera ilustraciones y muestra TASK-017 como bloqueada hasta AD-08.
+- Estado: ACTIVE — MVP móvil.

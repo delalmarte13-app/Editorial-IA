@@ -1,0 +1,12 @@
+import { ScrollView, Text, View } from "react-native";
+import { ScreenContainer } from "@/components/screen-container";
+import { IconSymbol } from "@/components/ui/icon-symbol";
+import { useColors } from "@/hooks/use-colors";
+import { trpc } from "@/lib/trpc";
+
+export default function ProjectScreen() {
+  const colors = useColors();
+  const tasks = trpc.editorial.tasks.useQuery();
+  const docs = trpc.editorial.documents.useQuery();
+  return <ScreenContainer className="px-5 pt-4"><ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 28 }}><Text className="text-sm text-muted font-semibold tracking-widest">PROYECTO</Text><Text className="text-3xl font-bold text-foreground mt-1">LEO-PÉREZ</Text><Text className="text-muted text-[15px] leading-6 mt-2 mb-6">Una vista compacta del canon, el pipeline y las decisiones que no se deben saltar.</Text><Text className="text-xl font-bold text-foreground mb-3">Pipeline</Text>{(tasks.data ?? []).map((task) => <View key={task.id} className="bg-surface border border-border rounded-2xl p-4 mb-3"><View className="flex-row items-center"><IconSymbol name={task.status === "DONE" ? "checkmark.circle.fill" : task.status === "BLOCKED" ? "lock.fill" : "chevron.right"} color={task.status === "DONE" ? colors.success : task.status === "BLOCKED" ? colors.warning : colors.primary} size={18} /><Text className="text-xs text-muted font-semibold ml-2">{task.id} · {task.priority}</Text><View className={`ml-auto rounded-full px-2 py-1 ${task.status === "BLOCKED" ? "bg-warning/15" : task.status === "DONE" ? "bg-success/15" : "bg-primary/10"}`}><Text className="text-[10px] text-foreground font-bold">{task.status}</Text></View></View><Text className="text-foreground font-bold text-[16px] mt-3">{task.title}</Text><Text className="text-muted text-sm leading-5 mt-1">{task.detail}</Text><Text className="text-foreground text-xs font-semibold mt-3">Siguiente: <Text className="text-muted font-normal">{task.next}</Text></Text></View>)}<Text className="text-xl font-bold text-foreground mt-4 mb-3">Documentos de referencia</Text><View className="bg-surface border border-border rounded-2xl p-2">{(docs.data ?? []).map((doc) => <View key={doc} className="flex-row items-center px-3 py-3 border-b border-border last:border-b-0"><IconSymbol name="doc.text.fill" color={colors.muted} size={17} /><Text className="text-foreground text-sm ml-3">{doc}</Text></View>)}</View></ScrollView></ScreenContainer>;
+}
