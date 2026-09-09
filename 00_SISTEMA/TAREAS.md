@@ -31,12 +31,15 @@ OPEN / IN PROGRESS / DONE / BLOCKED
 | TASK-012 | P0 | QA literario y coherencia | DONE | QA_LITERARIO_v1.md |
 | TASK-013 | P1 | Target, extensión y paginación | DONE | ESPECIFICACION_EDITORIAL_v1.md |
 | TASK-014 | P1 | World Bible + Visual Bible | DONE | WORLD_BIBLE_v1.md + VISUAL_BIBLE_v1.md |
-| TASK-015 | P1 | Storyboard / Scene Sheets | IN PROGRESS | STORYBOARD_v1.md |
-| TASK-016 | P1 | Dirección de arte + prompts | OPEN | — |
-| TASK-017 | P1 | Producción de ilustraciones | OPEN | — |
+| TASK-015 | P1 | Storyboard / Scene Sheets | DONE | STORYBOARD_v1.md (20 unidades, 40 páginas) |
+| TASK-016 | P1 | Dirección de arte + prompts | DONE | DIRECCION_ARTE_v1.md + PROMPTS_ILUSTRACION_v1.md |
+| TASK-017 | P1 | Producción de ilustraciones | OPEN | — (espera confirmación del autor) |
 | TASK-018 | P1 | Maquetación + KDP | OPEN | — |
 | TASK-019 | P0 | QA editorial final | OPEN | — |
 | TASK-020 | P1 | Estrategia comercial + lanzamiento | OPEN | — |
 
 ## REGLA DE CONTINUIDAD
 Cuando el usuario diga "continúa", "adelante", "sigue" o equivalente, el Director retoma la primera tarea IN PROGRESS/OPEN de mayor prioridad y continúa la cadena sin pedir confirmación para cada paso. Solo se detiene ante un bloqueo real o una decisión que corresponda al autor.
+
+## NOTA DE PIPELINE
+PRÓXIMA EN CADENA: TASK-017 (producción de ilustraciones). Los 20 prompts están listos en PROMPTS_ILUSTRACION_v1.md. Por coste de generación de imágenes con IA, la tarea arranca solo con confirmación expresa del autor (decisión AD-08, DECISIONES.md). Antes de U01 debe generarse y aprobarse el retrato-canon de cada personaje y la vista de Dientespuck.

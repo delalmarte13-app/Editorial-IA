@@ -67,3 +67,13 @@ Registro único de decisiones importantes del sistema y de cada proyecto.
 
 ## NOTA DE AUTOR
 Las decisiones marcadas como recomendación editorial pueden convertirse en CANON definitivo cuando el autor las apruebe. Mientras tanto, el sistema puede continuar con una versión de trabajo claramente marcada como PROVISIONAL.
+
+## DECISIONES DE DIRECCIÓN DE ARTE (AD) — TASK-016, 2026-09-09
+- AD-01 Formato: spreads apaisados 16:9; ajuste de pliego en maquetación; portadilla/créditos NO consumen U01–U20.
+- AD-02 Color como sistema por acto emocional; el color del pueblo es el indicador emocional (U04 espejo gris de U01; U17 recupera el color de U01).
+- AD-03 Estilo: álbum infantil contemporáneo pictórico (gouache/acuarela digital, textura artesanal, profundidad cinematográfica); prohibidos clip-art, vector plano, fotorrealismo y texto dentro de la imagen.
+- AD-04 Pliegue siempre libre de caras y gestos clave; zonas de descanso de texto por unidad.
+- AD-05 Producción imagen a imagen con referencia (personaje/escenario aprobados), nunca texto aislado; naming de archivos U01…U20.
+- AD-06 QA visual obligatorio de 10 puntos en cada imagen (DIRECCION_ARTE_v1.md §7).
+- AD-07 Prueba previa obligatoria: retratos-canon de LEO, PÉREZ, DINTRIDESKA y vista de DIENTESPUCK antes de U01.
+- AD-08 TASK-017 arranca solo con confirmación expresa del autor por el coste de generación de imágenes con IA; sin confirmación la cadena se detiene tras TASK-016.

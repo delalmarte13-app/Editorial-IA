@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## [0.2.0] — 2026-09-09
+- Backend 02_APP: POST /api/chat con Gemini (endpoint OpenAI-compatible de Google) y GET /api/health que informa gemini_configurado sin exponer la clave. Fallback a cualquier proveedor OpenAI-compatible (LLM_BASE_URL) y modo offline sin clave.
+- .env.example (GEMINI_API_KEY, GEMINI_MODEL) + .gitignore que protege claves; requirements.txt para 02_APP.
+- Pipeline LEO-PÉREZ: TASK-015 Storyboard v1 DONE (20 unidades / 40 páginas) y TASK-016 Dirección de arte + prompts de ilustración DONE (DIRECCION_ARTE_v1.md + PROMPTS_ILUSTRACION_v1.md).
+- Decisiones de dirección de arte AD-01…AD-08 registradas en DECISIONES.md.
+- PRÓXIMA: TASK-017 Producción de ilustraciones (requiere confirmación del autor por coste).
+
 ## [0.1.0] — Inicial
 - Arquitectura base del sistema iniciada.
 - CANON, decisiones, problemas y tareas creados.
