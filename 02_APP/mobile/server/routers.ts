@@ -42,11 +42,13 @@ export const appRouter = router({
             { role: "user", content: input.message },
           ],
           maxTokens: 700,
+          ...(ENV.forgeModel ? { model: ENV.forgeModel } : {}),
         });
         const content = result.choices?.[0]?.message?.content;
         const text = typeof content === "string" ? content : "El equipo recibió la solicitud, pero no devolvió texto legible.";
         return { mode: "online" as const, specialist: "Nico", text };
-      } catch {
+      } catch (error) {
+        console.error("editorial.chat: fallo al invocar el LLM", error);
         return { mode: "local" as const, specialist: "Santi", text: "No pude conectar con el equipo remoto. Revisa la conexión y vuelve a intentarlo; el texto no se ha perdido." };
       }
     }),
